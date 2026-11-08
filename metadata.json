@@ -1,0 +1,6 @@
+{
+  "name": "JARVIS AI Ecosystem",
+  "description": "Universal personal AI ecosystem and companion web app with reactor orb HUD, multilingual voice intelligence, emotion awareness, persistent memory, notes, and connected multi-device operations.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

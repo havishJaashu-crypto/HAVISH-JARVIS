@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <script>
+      // Gracefully neutralize Vite HMR WebSocket in proxy/iframe environment where HMR is disabled
+      (function() {
+        const NativeWebSocket = window.WebSocket;
+        if (!NativeWebSocket) return;
+
+        class ViteHmrMockSocket {
+          constructor(url) {
+            this.url = String(url || '');
+            this.readyState = 1; // OPEN
+            this.CONNECTING = 0;
+            this.OPEN = 1;
+            this.CLOSING = 2;
+            this.CLOSED = 3;
+            this.protocol = 'vite-hmr';
+            this.bufferedAmount = 0;
+            this.extensions = '';
+            this.binaryType = 'blob';
+            this._listeners = {};
+
+            const self = this;
+            setTimeout(function() {
+              self._dispatch('open', { type: 'open' });
+              self._dispatch('message', { data: JSON.stringify({ type: 'connected' }) });
+            }, 0);
+          }
+
+          send(data) {
+            try {
+              const parsed = typeof data === 'string' ? JSON.parse(data) : {};
+              if (parsed && parsed.type === 'ping') {
+                const self = this;
+                setTimeout(function() {
+                  self._dispatch('message', { data: JSON.stringify({ type: 'pong' }) });
+                }, 0);
+              }
+            } catch(e) {}
+          }
+
+          close() {
+            // Keep connection healthy in dev proxy
+          }
+
+          addEventListener(type, listener, options) {
+            if (!this._listeners[type]) this._listeners[type] = [];
+            const self = this;
+            const handler = function(e) {
+              if (options && options.once) {
+                self.removeEventListener(type, handler);
+              }
+              try { listener.call(self, e); } catch(err) {}
+            };
+            handler._orig = listener;
+            this._listeners[type].push(handler);
+          }
+
+          removeEventListener(type, listener) {
+            if (!this._listeners[type]) return;
+            this._listeners[type] = this._listeners[type].filter(function(l) {
+              return l !== listener && l._orig !== listener;
+            });
+          }
+
+          dispatchEvent(event) {
+            this._dispatch(event.type, event);
+            return true;
+          }
+
+          _dispatch(type, event) {
+            const list = (this._listeners[type] || []).slice();
+            for (let i = 0; i < list.length; i++) {
+              try { list[i].call(this, event); } catch(e) {}
+            }
+            if (typeof this['on' + type] === 'function') {
+              try { this['on' + type].call(this, event); } catch(e) {}
+            }
+          }
+        }
+
+        ViteHmrMockSocket.CONNECTING = 0;
+        ViteHmrMockSocket.OPEN = 1;
+        ViteHmrMockSocket.CLOSING = 2;
+        ViteHmrMockSocket.CLOSED = 3;
+
+        const CustomWebSocket = function(url, protocols) {
+          const urlStr = String(url || '');
+          const isHmr =
+            protocols === 'vite-hmr' ||
+            (Array.isArray(protocols) && protocols.includes('vite-hmr')) ||
+            urlStr.includes('vite-hmr') ||
+            urlStr.includes('token=') ||
+            urlStr.includes('5173') ||
+            urlStr.includes(':3000') ||
+            urlStr.includes('run.app');
+
+          if (isHmr) {
+            return new ViteHmrMockSocket(url);
+          }
+          return new NativeWebSocket(url, protocols);
+        };
+
+        CustomWebSocket.prototype = NativeWebSocket.prototype;
+        CustomWebSocket.CONNECTING = 0;
+        CustomWebSocket.OPEN = 1;
+        CustomWebSocket.CLOSING = 2;
+        CustomWebSocket.CLOSED = 3;
+
+        window.WebSocket = CustomWebSocket;
+
+        // Global error & console suppression for WebSocket disconnects in proxy environments
+        const origConsoleError = console.error;
+        console.error = function() {
+          const text = Array.from(arguments).map(function(a) { return String((a && a.message) || a || ''); }).join(' ');
+          if (text.includes('WebSocket closed without opened') || text.includes('failed to connect to websocket') || text.includes('[vite]')) {
+            return;
+          }
+          origConsoleError.apply(console, arguments);
+        };
+
+        window.addEventListener('error', function(event) {
+          const msg = String((event && event.message) || '');
+          if (msg.includes('WebSocket closed without opened') || msg.includes('vite:ws:disconnect') || msg.includes('failed to connect to websocket')) {
+            event.stopImmediatePropagation();
+            event.preventDefault();
+          }
+        }, true);
+
+        window.addEventListener('unhandledrejection', function(event) {
+          const reason = String((event && event.reason) || '');
+          if (reason.includes('WebSocket closed without opened') || reason.includes('vite:ws:disconnect') || reason.includes('failed to connect to websocket')) {
+            event.stopImmediatePropagation();
+            event.preventDefault();
+          }
+        }, true);
+      })();
+    </script>
+    <title>JARVIS AI Ecosystem</title>
+    <meta name="description" content="Universal personal AI ecosystem and companion web app with reactor orb HUD, multilingual voice intelligence, emotion awareness, persistent memory, notes, and connected multi-device operations." />
+    <meta property="og:title" content="JARVIS AI Ecosystem" />
+    <meta property="og:description" content="Universal personal AI ecosystem and companion web app with reactor orb HUD, multilingual voice intelligence, emotion awareness, persistent memory, notes, and connected multi-device operations." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#030712" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="JARVIS" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@400;600;700;800;900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <style>
+      /* Older iOS Safari & Legacy WebKit Compatibility */
+      html, body {
+        -webkit-text-size-adjust: 100%;
+        -webkit-tap-highlight-color: transparent;
+        padding-top: constant(safe-area-inset-top);
+        padding-top: env(safe-area-inset-top);
+        padding-bottom: constant(safe-area-inset-bottom);
+        padding-bottom: env(safe-area-inset-bottom);
+        background-color: #030712;
+      }
+      @supports not (height: 100dvh) {
+        body { min-height: 100vh; }
+      }
+    </style>
+  </head>
+  <body class="bg-[#030712] text-slate-100 overflow-x-hidden selection:bg-cyan-500/30 selection:text-cyan-200">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

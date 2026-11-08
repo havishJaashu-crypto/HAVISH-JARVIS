@@ -1,0 +1,6 @@
+{
+  "summary":  "Implementation plan for multilingual wake word detection (English & Telugu) with language auto-locking, sensitivity threshold tuning, and emotion-aware voice modulation (pitch, speed, intonation) with an intensity control slider.",
+  "updatedAt":  "2026-11-07T16:32:01.416793468Z",
+  "requestFeedback":  true,
+  "userFacing":  true
+}

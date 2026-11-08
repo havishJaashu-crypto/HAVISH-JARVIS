@@ -1,0 +1,307 @@
+{
+  "conversationHistory": [
+    {
+      "id": "conv-1794070202185",
+      "role": "user",
+      "text": "list our active projects and their status",
+      "timestamp": "2026-11-07T16:50:02.185Z"
+    },
+    {
+      "id": "conv-1794070202186",
+      "role": "assistant",
+      "text": "Certainly, Sir. \n\nWe currently have two primary initiatives on the ledger:\n\nFirst, **Project JARVIS Universal Ecosystem**, which is currently Active and progressing smoothly. \n\nSecond, the **Arc Reactor Holographic HUD**, which is fully Operational and running at peak telemetry.\n\nAll core metrics are nominal, Sir. Would you like me to project the detailed schematics for either?",
+      "timestamp": "2026-11-07T16:50:02.185Z"
+    },
+    {
+      "id": "conv-1794070429745",
+      "role": "user",
+      "text": "hey Jarvis movie",
+      "timestamp": "2026-11-07T16:53:49.746Z"
+    },
+    {
+      "id": "conv-1794070429747",
+      "role": "assistant",
+      "text": "Right away, Sir. Shall I dim the lights and set the display to cinema mode, or did you have a particular title in mind for this evening?",
+      "timestamp": "2026-11-07T16:53:49.746Z"
+    },
+    {
+      "id": "conv-1794071248879",
+      "role": "user",
+      "text": "Jarvis, book a bike from rapido to Cyber Towers",
+      "timestamp": "2026-11-07T17:07:28.879Z"
+    },
+    {
+      "id": "conv-1794071248880",
+      "role": "assistant",
+      "text": "Sir, I have prepared a Rapido Bike booking to Cyber Towers. The estimated fare is ₹75 (Est. ₹65 - ₹85) with a 3-minute ETA. Would you like me to confirm and book it?",
+      "timestamp": "2026-11-07T17:07:28.879Z"
+    },
+    {
+      "id": "conv-1794071252275",
+      "role": "user",
+      "text": "Jarvis, uber lo bike book cheyyi Sir to Hitech City",
+      "timestamp": "2026-11-07T17:07:32.275Z"
+    },
+    {
+      "id": "conv-1794071252276",
+      "role": "assistant",
+      "text": "Sir, Uber Bike booking ready chesanu to bike book cheyyi Sir to Hitech City. Estimated fare ₹75, arriving in 3 mins. Booking confirm cheyyamantara Sir?",
+      "timestamp": "2026-11-07T17:07:32.275Z"
+    },
+    {
+      "id": "conv-1794123258408",
+      "role": "user",
+      "text": "book a bike from rapido to cyber towers",
+      "timestamp": "2026-11-08T07:34:18.408Z"
+    },
+    {
+      "id": "conv-1794123258409",
+      "role": "assistant",
+      "text": "Sir, I have prepared a Rapido Bike booking to cyber towers. The estimated fare is ₹75 (Est. ₹65 - ₹85) with a 3-minute ETA. Would you like me to confirm and book it?",
+      "timestamp": "2026-11-08T07:34:18.408Z"
+    },
+    {
+      "id": "conv-1794124362667",
+      "role": "user",
+      "text": "what is 125 * 8",
+      "timestamp": "2026-11-08T07:52:42.667Z"
+    },
+    {
+      "id": "conv-1794124362669",
+      "role": "assistant",
+      "text": "The calculated result is 1000, Sir. (125 * 8 = 1000). Computations verified.",
+      "timestamp": "2026-11-08T07:52:42.668Z"
+    },
+    {
+      "id": "conv-1794124367537",
+      "role": "user",
+      "text": "tell me how python works",
+      "timestamp": "2026-11-08T07:52:47.537Z"
+    },
+    {
+      "id": "conv-1794124367538",
+      "role": "assistant",
+      "text": "Python remains the benchmark for rapid prototyping, AI architectures, and backend automation, Sir. Which logic, data structure, or script would you like me to construct?",
+      "timestamp": "2026-11-08T07:52:47.537Z"
+    },
+    {
+      "id": "conv-1794124371609",
+      "role": "user",
+      "text": "explain quantum physics",
+      "timestamp": "2026-11-08T07:52:51.609Z"
+    },
+    {
+      "id": "conv-1794124371610",
+      "role": "assistant",
+      "text": "Quantum mechanics demonstrates that particles exist in superposed probability states until observed, Sir. Quantum entanglement allows instantaneous state correlation across vast distances.",
+      "timestamp": "2026-11-08T07:52:51.609Z"
+    },
+    {
+      "id": "conv-1794124376501",
+      "role": "user",
+      "text": "Jarvis na notes lo emundhi",
+      "timestamp": "2026-11-08T07:52:56.501Z"
+    },
+    {
+      "id": "conv-1794124376502",
+      "role": "assistant",
+      "text": "You have 2 active running notes on file, Sir, including \"Architectural Directives\", \"Voice Notes — Tanglish Test\". All records are securely synchronized.",
+      "timestamp": "2026-11-08T07:52:56.501Z"
+    },
+    {
+      "id": "conv-1794124383567",
+      "role": "user",
+      "text": "నాకు ఒక జోక్ చెప్పు",
+      "timestamp": "2026-11-08T07:53:03.567Z"
+    },
+    {
+      "id": "conv-1794124383568",
+      "role": "assistant",
+      "text": "Sir, మీ ప్రశ్నను నేను అర్థం చేసుకున్నాను: \"నాకు ఒక జోక్ చెప్పు\". నా అటానమస్ న్యూరల్ కోర్ విశ్లేషించింది. మీరు ఏ విషయం గురించి మరింత లోతుగా తెలుసుకోవాలనుకుంటున్నారో చెప్పండి, నేను స్పష్టమైన సమాధానం అందిస్తాను.",
+      "timestamp": "2026-11-08T07:53:03.567Z"
+    },
+    {
+      "id": "conv-1794124423024",
+      "role": "user",
+      "text": "నాకు ఒక జోక్ చెప్పు",
+      "timestamp": "2026-11-08T07:53:43.024Z"
+    },
+    {
+      "id": "conv-1794124423026",
+      "role": "assistant",
+      "text": "Sir, కంప్యూటర్ సైంటిస్ట్ టీ ఎందుకు తాగలేదు? ఎందుకంటే అందులో జావా (Java) లేదు!",
+      "timestamp": "2026-11-08T07:53:43.025Z"
+    },
+    {
+      "id": "conv-1794124427396",
+      "role": "user",
+      "text": "how does the arc reactor work",
+      "timestamp": "2026-11-08T07:53:47.396Z"
+    },
+    {
+      "id": "conv-1794124427397",
+      "role": "assistant",
+      "text": "The miniaturized Arc Reactor operates on clean multi-gigajoule electromagnetic fusion, Sir. The Mark VII platform is fully calibrated with active repulsors, sensory stabilization, and instant voice telemetry.",
+      "timestamp": "2026-11-08T07:53:47.396Z"
+    },
+    {
+      "id": "conv-1794124431388",
+      "role": "user",
+      "text": "I feel tired today give me some advice",
+      "timestamp": "2026-11-08T07:53:51.388Z"
+    },
+    {
+      "id": "conv-1794124431389",
+      "role": "assistant",
+      "text": "Momentum is built through disciplined focus and small, consistent execution, Sir. You have overcome formidable challenges before; this moment is merely another milestone. I am at your side.",
+      "timestamp": "2026-11-08T07:53:51.388Z"
+    },
+    {
+      "id": "conv-1794125795311",
+      "role": "user",
+      "text": "tell me Pushpa and Baahubali dialogues in Telugu",
+      "timestamp": "2026-11-08T08:16:35.311Z"
+    },
+    {
+      "id": "conv-1794125795312",
+      "role": "assistant",
+      "text": "I have thoroughly processed your input, Sir: \"tell me Pushpa and Baahubali dialogues in Telugu\". My autonomous intelligence subsystems are analyzing the contextual parameters. Please instruct me on how you would like me to proceed or expand upon this.",
+      "timestamp": "2026-11-08T08:16:35.312Z"
+    },
+    {
+      "id": "conv-1794126009214",
+      "role": "user",
+      "text": "tell me Pushpa and Baahubali dialogues in Telugu",
+      "timestamp": "2026-11-08T08:20:09.214Z"
+    },
+    {
+      "id": "conv-1794126009215",
+      "role": "assistant",
+      "text": "Right away, Sir. \n\nFrom *Pushpa*: **\"పుష్ప... పుష్పరాజ్... తగ్గేదే లే!\"** \n\nAnd from *Baahubali*: **\"మాహిష్మతీ ఊపిరి నా కత్తి... నా మాటే శాసనం!\"**",
+      "timestamp": "2026-11-08T08:20:09.214Z"
+    },
+    {
+      "id": "conv-1794126075660",
+      "role": "user",
+      "text": "tell me Pushpa dialogues in Telugu",
+      "timestamp": "2026-11-08T08:21:15.660Z"
+    },
+    {
+      "id": "conv-1794126075662",
+      "role": "assistant",
+      "text": "Sir, ఐకాన్ స్టార్ అల్లు అర్జున్ మరియు సుకుమార్ కాంబినేషన్ లో వచ్చిన 'పుష్ప' ప్రభంజనం సృష్టించింది! \"పుష్ప... పుష్ప రాజ్... తగ్గేదే లే!\" అనే డైలాగ్ ప్రపంచవ్యాప్తంగా ట్రెండ్ అయింది.",
+      "timestamp": "2026-11-08T08:21:15.661Z"
+    },
+    {
+      "id": "conv-1794126078865",
+      "role": "user",
+      "text": "tell me Iron Man and KGF dialogues dubbed in Telugu",
+      "timestamp": "2026-11-08T08:21:18.865Z"
+    },
+    {
+      "id": "conv-1794126078866",
+      "role": "assistant",
+      "text": "Sir, 'ఐరన్ మ్యాన్' తెలుగు డబ్బింగ్ చాలా ఆసక్తికరంగా ఉంటుంది! టోనీ స్టార్క్ డైలాగ్స్ ని తెలుగులో చాలా స్టైలిష్ గా మరియు తెలివిగా డబ్ చేశారు. ఎండ్‌గేమ్ లో \"నేను ఐరన్ మ్యాన్ ని\" (I am Iron Man) అనే చివరి డైలాగ్ భావోద్వేగాన్ని నింపింది.",
+      "timestamp": "2026-11-08T08:21:18.865Z"
+    },
+    {
+      "id": "conv-1794126083535",
+      "role": "user",
+      "text": "tell me Brahmanandam famous memes and dialogues in Telugu",
+      "timestamp": "2026-11-08T08:21:23.535Z"
+    },
+    {
+      "id": "conv-1794126083536",
+      "role": "assistant",
+      "text": "Sir, సునీల్ గారి 'సొంతం' కాలేజ్ కామెడీ సీన్స్ ఎప్పటికీ ఎవర్ గ్రీన్! \"బంక్ సీను అంటే నేనేరా!\" మరియు 'నువ్వు నాకు నచ్చావ్' లో బంతి సీన్ మీమ్ క్రియేటర్లకు నిత్య వరం!",
+      "timestamp": "2026-11-08T08:21:23.535Z"
+    },
+    {
+      "id": "conv-1794126103830",
+      "role": "user",
+      "text": "tell me Brahmanandam famous meme dialogues in Telugu",
+      "timestamp": "2026-11-08T08:21:43.830Z"
+    },
+    {
+      "id": "conv-1794126103831",
+      "role": "assistant",
+      "text": "Sir, మన గిన్నీస్ రికార్డ్ హోల్డర్ బ్రహ్మానందం గారి మీమ్స్ ప్రపంచంలోనే టాప్! \"ఏంటమ్మా ఇది... నాకేంటి సంబంధం?\", \"ఖాన్ దాదా అంటే కనీసం కనికరం లేదా?\", మరియు 'రెడీ' లో మెక్‌డోవెల్ మూర్తిగా ఆయన హావభావాలు అద్భుతం!",
+      "timestamp": "2026-11-08T08:21:43.830Z"
+    },
+    {
+      "id": "conv-1794126107819",
+      "role": "user",
+      "text": "teach me Python programming step by step",
+      "timestamp": "2026-11-08T08:21:47.819Z"
+    },
+    {
+      "id": "conv-1794126107820",
+      "role": "assistant",
+      "text": "Delighted to conduct a masterclass on \"Python programming step by step\", Sir. Here is your structured roadmap:\n\n1. Foundational Intuition: Establish the core objective and architectural principles.\n2. Mechanical Decomposition: Break the complexity into modular, manageable components.\n3. Applied Demonstration: Observe how inputs transition into concrete outputs.\n4. Stark Optimization Heuristic: Iterate rapidly, test edge-cases, and automate the mundane.\n\nWhich specific dimension of Python programming step by step shall we deconstruct next, Sir?",
+      "timestamp": "2026-11-08T08:21:47.819Z"
+    },
+    {
+      "id": "conv-1794126111122",
+      "role": "user",
+      "text": "book a bike from Rapido to Hitech City Cyber Towers",
+      "timestamp": "2026-11-08T08:21:51.122Z"
+    },
+    {
+      "id": "conv-1794126111123",
+      "role": "assistant",
+      "text": "Sir, I have prepared a Rapido Bike booking to Hitech City Cyber Towers. The estimated fare is ₹75 (Est. ₹65 - ₹85) with a 3-minute ETA. Would you like me to confirm and book it?",
+      "timestamp": "2026-11-08T08:21:51.122Z"
+    }
+  ],
+  "personalMemory": [
+    {
+      "id": "p-1",
+      "key": "Owner Title",
+      "value": "Addressed as Sir",
+      "category": "personal",
+      "updated": "2026-11-07T16:27:51.841Z"
+    },
+    {
+      "id": "p-2",
+      "key": "Primary Dialects",
+      "value": "Telugu, Tanglish (Telugu-English blend), English, Hindi",
+      "category": "preference",
+      "updated": "2026-11-07T16:27:51.841Z"
+    },
+    {
+      "id": "p-3",
+      "key": "Favorite Workspace",
+      "value": "High-contrast cyan Arc Reactor HUD with voice priority",
+      "category": "interface",
+      "updated": "2026-11-07T16:27:51.841Z"
+    }
+  ],
+  "projectMemory": [
+    {
+      "id": "proj-1",
+      "title": "Project JARVIS Universal Ecosystem",
+      "status": "Active",
+      "progress": 95,
+      "details": "Cross-platform multi-device synchronization with iPhone PWA, Android, and Windows agents."
+    },
+    {
+      "id": "proj-2",
+      "title": "Arc Reactor Holographic HUD",
+      "status": "Operational",
+      "progress": 100,
+      "details": "Audio-reactive concentric rings with dynamic state transitions."
+    }
+  ],
+  "privateVault": [
+    {
+      "id": "pv-1",
+      "title": "Personal Diary Entry",
+      "content": "Universal JARVIS companion activated on iOS Safari & home screen. System responds with high fidelity.",
+      "timestamp": "2026-11-07T16:27:51.841Z",
+      "tags": [
+        "milestone",
+        "private"
+      ]
+    }
+  ]
+}
